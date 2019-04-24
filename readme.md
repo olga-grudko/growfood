@@ -6,5 +6,5 @@
 <p>Реквесты - app/Http/Requests</p>
 
 
-<p>Накатить миграции и сиды перед запуском - php artisan migrate:refresh --seed <\p>
+Накатить миграции и сиды перед запуском - php artisan migrate:refresh --seed
 

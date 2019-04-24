@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1beff64-45de-4b0a-a0d5-8bb28edd7dab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_04_24_115041_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_04_24_115041_create_users_table.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +43,7 @@
           <entry key="js" value="4" />
           <entry key="json" value="1" />
           <entry key="md" value="1" />
-          <entry key="php" value="60" />
+          <entry key="php" value="61" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -53,7 +53,7 @@
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="4" />
           <entry key="Markdown" value="1" />
-          <entry key="PHP" value="53" />
+          <entry key="PHP" value="54" />
           <entry key="PLAIN_TEXT" value="5" />
         </counts>
       </usages-collector>
@@ -64,7 +64,7 @@
           <entry key="js" value="236" />
           <entry key="json" value="2" />
           <entry key="md" value="275" />
-          <entry key="php" value="6107" />
+          <entry key="php" value="6111" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -73,7 +73,7 @@
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="236" />
           <entry key="Markdown" value="275" />
-          <entry key="PHP" value="4877" />
+          <entry key="PHP" value="4881" />
           <entry key="PLAIN_TEXT" value="24" />
         </counts>
       </usages-collector>
@@ -128,14 +128,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="136">
-                <caret line="8" column="79" selection-start-line="8" selection-start-column="79" selection-end-line="8" selection-end-column="79" />
+              <first_editor relative-caret-position="170">
+                <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_24_115041_create_users_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -189,7 +198,6 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_04_24_111956_create_tarif_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_24_112357_create_delivery_days_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_24_115208_create_users_tarifs_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_04_24_115041_create_users_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_24_111956_create_tarifs_table.php" />
         <option value="$PROJECT_DIR$/database/seeds/TarifsDaysTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_24_114438_create_delivery_days_table.php" />
@@ -212,6 +220,7 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" />
         <option value="$PROJECT_DIR$/resources/views/order.blade.php" />
         <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_04_24_115041_create_users_table.php" />
       </list>
     </option>
   </component>
@@ -333,7 +342,13 @@
             <path>
               <item name="growfood" type="b2602c69:ProjectViewProjectNode" />
               <item name="growfood" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="growfood" type="b2602c69:ProjectViewProjectNode" />
+              <item name="growfood" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -370,12 +385,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1556103770153</updated>
-      <workItem from="1556103771251" duration="28307000" />
+      <workItem from="1556103771251" duration="28494000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28307000" />
+    <option name="totallyTimeSpent" value="28494000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1985" y="-4" width="1855" height="1084" extended-state="6" />
@@ -563,13 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_24_115041_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_24_115208_create_users_tarifs_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -655,10 +663,17 @@
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="136">
-            <caret line="8" column="79" selection-start-line="8" selection-start-column="79" selection-end-line="8" selection-end-column="79" />
+          <first_editor relative-caret-position="170">
+            <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_24_115041_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
         </state>
       </provider>
     </entry>

@@ -23,17 +23,15 @@ class ArrayHelper
     }
 
     /**
-     *  Вjзвращает форматированный массив вида id=>name
+     *  Возвращает форматированный массив вида id=>name
      * @param array $array
-     * @return array|null
+     * @return array
      */
-    public static function getFormattedArrayForDropdown(array $array)
+    public static function getFormattedArrayForDropdown(array $array) : array
     {
-        if(empty($array['id']) || empty($array['name'])) {
-            return null;
-        }
         $ids = array_column($array, 'id');
         $names = array_column($array, 'name');
+
         return array_combine($ids, $names);
     }
 }

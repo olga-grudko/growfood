@@ -12,8 +12,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
 </head>
+<style>
+    .conteiner {
+        width: 300px
+    }
+</style>
 <body>
-<div class="">
+<div class="conteiner px-4 mt-4">
     <div id="messages"></div>
 
     {{ Form::open(['id' => 'orderForm']) }}
@@ -24,7 +29,7 @@
     </div>
     <div class="form-group">
         <label for="phone">Телефон</label>
-        {{Form::text('phone',null,  ['class' => 'form-control', 'id' => 'phone'])}}
+        {{Form::text('phone',null,  ['class' => 'form-control', 'id' => 'phone', 'placeholder' => '79111234567'])}}
     </div>
     <div class="form-group">
         <label class="form-check-label" for="tarif">Тариф</label>
@@ -60,7 +65,8 @@
                     data: $(this).serialize(),
 
                     success: function (data) {
-                        $('#messages').append('<div class="bg-success alert-success">Сохранено!</div');
+                        $('#messages').text('');
+                        $('#messages').append('<div class="alert alert-success">Сохранено!</div');
                     },
                     error: function (xhr) {
                         var errors = xhr.responseJSON.errors;
@@ -75,7 +81,7 @@
 
             }));
 
-            $('#tarif').on('change', function(){
+            $('#tarif').on('change', function () {
                 $.ajaxSetup({
                     headers: {
                         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -88,14 +94,14 @@
                     url: "{{route('order.change.tarif')}}",
 
                     data: {
-                        '_token' : "{{csrf_token()}}",
-                        'tarif' : $('#tarif option:selected').val(),
+                        '_token': "{{csrf_token()}}",
+                        'tarif': $('#tarif option:selected').val(),
                     },
 
                     success: function (data) {
                         $('#delivery_day').children().remove();
                         $.each(data, function (id, day) {
-                            $('#delivery_day').append('<option selected value="'+ id+'" >' + day + '</option>');
+                            $('#delivery_day').append('<option selected value="' + id + '" >' + day + '</option>');
                         });
                     },
                     error: function (xhr) {
@@ -109,7 +115,7 @@
 
             });
 
-            $('#delivery_day').on('change', function(){
+            $('#delivery_day').on('change', function () {
 
                 $.ajax({
                     type: "{{\Illuminate\Http\Request::METHOD_POST}}",
@@ -117,8 +123,8 @@
                     url: "{{route('order.change.delivery.day')}}",
 
                     data: {
-                        '_token' : "{{csrf_token()}}",
-                        'delivery_day' : $('#delivery_day option:selected').val(),
+                        '_token': "{{csrf_token()}}",
+                        'delivery_day': $('#delivery_day option:selected').val(),
                     },
 
                     success: function (data) {
@@ -126,10 +132,10 @@
 
                         $.each(data.tarifs, function (id, name) {
                             console.log(id, name);
-                            $('#tarif').append('<option value="'+ id+'" >' + name + '</option>');
+                            $('#tarif').append('<option value="' + id + '" >' + name + '</option>');
                         });
 
-                        $("#tarif [value='"+data.tarifDay+"']").attr("selected", "selected");
+                        $("#tarif [value='" + data.tarifDay + "']").attr("selected", "selected");
                     },
                     error: function (xhr) {
                         var errors = xhr.responseJSON.errors;

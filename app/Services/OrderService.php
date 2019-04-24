@@ -36,7 +36,7 @@ class OrderService
         self::SUNDAY => 'Воскресение',
     ];
 
-    const SUCCESS_RESPONCE = 'Сохранено';
+    const SUCCESS_RESPONSE = 'Сохранено';
 
     /**
      * @return array
@@ -87,7 +87,7 @@ class OrderService
 
             DB::commit();
 
-            return self::SUCCESS_RESPONCE;
+            return self::SUCCESS_RESPONSE;
 
         } catch(\Exception $e)
         {
